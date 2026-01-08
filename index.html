@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>টাকা আয় করুন - বিজ্ঞাপন দেখুন</title>
-    <script src='//libtl.com/sdk.js' data-zone='10382107' data-sdk='show_10382107'></script>
+    <script src='//libtl.com/sdk.js' data-zone='10394609' data-sdk='show_10394609'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
@@ -725,9 +725,9 @@
         const MIN_WITHDRAW_TAKA = 20; // ন্যূনতম উত্তোলন ২০ টাকা
         const REFERRAL_BONUS = 5.00; // রেফারেল বোনাস ৫ টাকা
         
-        // Telegram Bot Configuration - এখানে আপনার বটের তথ্য দিন
-        const BOT_TOKEN = "8275350551:AAFv0PW-4klkJWxBOY-j8eGO80BfeDBCieM"; // আপনার বট টোকেন
-        const ADMIN_CHAT_ID = "6862057027"; // আপনার টেলিগ্রাম চ্যাট আইডি
+        // Telegram Bot Configuration - আপডেট করা হয়েছে
+        const BOT_TOKEN = "8436112338:AAF5SXzAsnxebu1MhsENI4kSSDQoYDE8WeA"; // আপনার বট টোকেন
+        const ADMIN_CHAT_ID = "7448519219"; // আপনার টেলিগ্রাম চ্যাট আইডি
         
         // Variables
         let watchedAdsCount = 0;
@@ -845,9 +845,9 @@
             }, 2000);
         }
 
-        // Check if Monetag ad is ready
+        // Check if Monetag ad is ready (আপডেট করা হয়েছে)
         function checkAdReady() {
-            if (typeof window.show_10382107 !== 'function') {
+            if (typeof window.show_10394609 !== 'function') {
                 document.getElementById('ad-status').innerHTML = '<i class="fas fa-spinner fa-spin"></i> বিজ্ঞাপন সিস্টেম লোড হচ্ছে...';
                 setTimeout(checkAdReady, 1000);
             } else {
@@ -899,11 +899,11 @@
             document.getElementById('ads-progress').textContent = `${earnedPoints.toFixed(2)}/${MIN_WITHDRAW_TAKA} টাকা`;
         }
 
-        // Function to watch an ad and earn points
+        // Function to watch an ad and earn points (আপডেট করা হয়েছে)
         function watchAd() {
             if (isAdLoading) return;
             
-            if (typeof window.show_10382107 !== 'function') {
+            if (typeof window.show_10394609 !== 'function') {
                 document.getElementById('ad-status').innerHTML = '<i class="fas fa-exclamation-circle"></i> বিজ্ঞাপন সিস্টেম প্রস্তুত নয়। দয়া করে অপেক্ষা করুন...';
                 return;
             }
@@ -915,7 +915,7 @@
             
             try {
                 // Show the ad
-                window.show_10382107().then(() => {
+                window.show_10394609().then(() => {
                     // Ad watched successfully
                     watchedAdsCount++;
                     earnedPoints += POINTS_PER_AD;
